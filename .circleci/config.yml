@@ -61,6 +61,7 @@ jobs:
             - "ff:8e:ae:03:98:20:6f:c2:ff:fc:1d:0d:ac:e2:df:e1"
       - attach_workspace:
           at: ~/repo
+      - checkout
       - deploy:
           name: Deploy to GH_Pages
           command:  |
